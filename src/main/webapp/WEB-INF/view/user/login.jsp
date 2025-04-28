@@ -172,7 +172,7 @@
 <body onload="fnInit();">
 <div class="site-wrap login">
     <div class="login-wrap">
-        <form class="login-form" name="loginForm" id="loginForm" action="/actionLogin.do" method="post">
+        <form class="login-form" name="loginForm" id="loginForm" action="<c:url value="/actionLogin.do"/>" method="post">
             <h1 class="title">
                 로그인 페이지
             </h1>

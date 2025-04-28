@@ -34,7 +34,7 @@ import javax.persistence.*;
  * @since ${since}
  */
 @Entity
-@Table(name = "TB_CM_FILE_DTL")
+@Table(name = "tb_cm_file_dtl")
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
 @Setter
 @Getter

@@ -48,7 +48,7 @@ public class SystemProperty {
     private String useYn;
 
     @CreatedDate
-    @Column(name = "REG_DT")
+    @Column(name = "REG_DT", nullable = false)
     @Comment("등록일시")
     private LocalDateTime regDt;
 
@@ -57,11 +57,11 @@ public class SystemProperty {
     private String rgtrId;
 
     @LastModifiedDate
-    @Column(name = "MDFCN_DT")
+    @Column(name = "MDFCN_DT", nullable = false)
     @Comment("수정일시")
     private LocalDateTime mdfcnDt;
 
-    @Column(name = "MDFR_ID")
+    @Column(name = "MDFR_ID", nullable = false)
     @Comment("수정자아이디")
     private String mdfrId;
 }

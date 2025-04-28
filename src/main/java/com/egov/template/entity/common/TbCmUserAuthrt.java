@@ -36,7 +36,7 @@ import javax.persistence.*;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
-@Table(name = "TB_CM_USER_AUTHRT")
+@Table(name = "tb_cm_user_authrt")
 @ToString
 public class TbCmUserAuthrt extends SystemProperty {
 

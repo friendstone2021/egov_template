@@ -41,7 +41,7 @@ import java.util.Date;
  * @since ${since}
  */
 @Entity
-@Table(name = "TB_CM_USER")
+@Table(name = "tb_cm_user")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -61,17 +61,17 @@ public class TbCmUser extends SystemProperty {
     @Comment("부서코드")
     private String deptCd;
 
-    @Column(name = "USER_ENPSWD")
-    @Comment("사용자암호화비밀번호")
-    private String userEnpswd;
+    @Column(name = "ENPSWD")
+    @Comment("암호화비밀번호")
+    private String enpswd;
 
     @Column(name = "USER_NM")
     @Comment("사용자명")
     private String userNm;
 
-    @Column(name = "USER_TELNO")
+    @Column(name = "MBL_TELNO")
     @Comment("사용자전화번호")
-    private String userTelno;
+    private String mblTelno;
 
     @Column(name = "EML_ADDR")
     @Pattern(regexp = "^(?=.{1,64}@)[A-Za-z0-9_-]+(\\.[A-Za-z0-9_-]+)*@[^-][A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\\.[A-Za-z]{2,})$")
@@ -92,6 +92,6 @@ public class TbCmUser extends SystemProperty {
 
     @Column(name = "PSWD_CHG_DT")
     @Comment("비밀번호변경일시")
-    private String pswdChgDt;
+    private Date pswdChgDt;
 
 }

@@ -39,7 +39,7 @@ import java.io.Serializable;
  * </pre>
  */
 @Entity
-@Table(name = "TB_CM_CD_GROUP")
+@Table(name = "tb_cm_cd_group")
 @Getter
 @Setter
 @NoArgsConstructor

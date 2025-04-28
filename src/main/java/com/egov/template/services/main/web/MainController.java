@@ -35,7 +35,7 @@ public class MainController {
 
     @RequestMapping(value = "/mainPage.do")
     public String mainPage() {
-        return "/main/mainPage";
+        return "main/mainPage";
     }
 
 }

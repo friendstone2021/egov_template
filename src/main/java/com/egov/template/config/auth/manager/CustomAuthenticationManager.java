@@ -71,7 +71,7 @@ public class CustomAuthenticationManager implements AuthenticationManager {
         ExampleMatcher matcher = ExampleMatcher.matching();
         if (optCmTbUser.isPresent()) {
             TbCmUser tbCmUser = optCmTbUser.get();
-            if (!password.equals(tbCmUser.getUserEnpswd())) {
+            if (!password.equals(tbCmUser.getEnpswd())) {
                 throw new BadCredentialsException("invalidIdPass");
             } else {
                 tbCmUser.setLastCntnDt(new Date());
@@ -98,7 +98,7 @@ public class CustomAuthenticationManager implements AuthenticationManager {
                             .roles(arrUserAuth)
                             .build();
 
-                    tbCmUser.setUserEnpswd(null);
+                    tbCmUser.setEnpswd(null);
 
                     authToken = new UsernamePasswordAuthenticationToken(userDetails, password, userDetails.getAuthorities());
                     authToken.setDetails(tbCmUser);

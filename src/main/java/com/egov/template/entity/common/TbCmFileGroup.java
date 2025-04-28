@@ -38,7 +38,7 @@ import javax.persistence.Table;
  * </pre>
  */
 @Entity
-@Table(name = "TB_CM_FILE_GROUP")
+@Table(name = "tb_cm_file_group")
 @Getter
 @Setter
 @NoArgsConstructor

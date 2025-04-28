@@ -39,7 +39,7 @@ import javax.persistence.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "TB_CM_AUTHRT")
+@Table(name = "tb_cm_authrt")
 public class TbCmAuthrt extends SystemProperty {
 
     @Id

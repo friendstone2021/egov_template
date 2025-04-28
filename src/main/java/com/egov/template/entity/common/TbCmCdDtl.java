@@ -33,7 +33,7 @@ import javax.persistence.*;
  * </pre>
  */
 @Entity
-@Table(name = "TB_CM_CD_DTL")
+@Table(name = "tb_cm_cd_dtl")
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
 @Setter
 @Getter

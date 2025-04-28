@@ -32,7 +32,7 @@ import javax.persistence.*;
  * </pre>
  */
 @Entity
-@Table(name = "TB_CM_MENU_AUTHRT")
+@Table(name = "tb_cm_menu_authrt")
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
 @Setter
 @Getter
